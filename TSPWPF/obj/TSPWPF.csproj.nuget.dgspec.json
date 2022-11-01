@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
+        "projectName": "TSPWPF",
+        "projectPath": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
+        "packagesPath": "C:\\Users\\theKonfyrm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\theKonfyrm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
