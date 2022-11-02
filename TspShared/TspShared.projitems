@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>79406501-FE35-4320-A8D6-9C6991ED4074</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TspShared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ITspSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PmxSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ThreeOptSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TspUtils.cs" />
+  </ItemGroup>
+</Project>
