@@ -4,7 +4,7 @@ namespace TspTasks;
 
 public class TaskTspSolver : ITspSolver
 {
-    public async Task<int[]> Phase1(double[,] cities, int citiesNo, int threadsNo, long millis)
+    public async Task<List<int[]>> Phase1(double[,] cities, int citiesNo, int threadsNo, long millis)
     {
         int[] indices = new int[citiesNo];
         for (int i = 0; i < citiesNo; i++)

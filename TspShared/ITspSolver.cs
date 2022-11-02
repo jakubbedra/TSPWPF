@@ -5,7 +5,7 @@ public interface ITspSolver
     /**
      * Calculates (sub) optimal TSP route with PmxSolver
      */
-    public Task<int[]> Phase1(double[,] cities, int citiesNo, int threadsNo, long millis);
+    public Task<List<int[]>> Phase1(double[,] cities, int citiesNo, int threadsNo, long millis);
 
     /**
      * Calculates (sub) optimal TSP route with ThreeOptSolver
