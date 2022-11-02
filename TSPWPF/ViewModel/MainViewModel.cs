@@ -20,12 +20,35 @@ public class MainViewModel : INotifyPropertyChanged
         set
         {
             _filePath = value;
-            OnPropertyChanged();
+            OnPropertyChanged(nameof(FilePath));
         }
     }
 
-    public double CanvasWidth { get; set; }
-    public double CanvasHeight { get; set; }
+    private double _canvasWidth;
+
+    public double CanvasWidth
+    {
+        get { return _canvasWidth-10; }
+        set
+        {
+            _canvasWidth = value;
+            OnPropertyChanged(nameof(CanvasWidth));
+            RefreshCities();
+        }
+    }
+
+    private double _canvasHeight { get; set; }
+
+    public double CanvasHeight
+    {
+        get { return _canvasHeight-10; }
+        set
+        {
+            _canvasHeight = value;
+            OnPropertyChanged(nameof(CanvasHeight));
+            RefreshCities();
+        }
+    }
 
     public List<City> Cities { get; set; }
 
@@ -46,14 +69,15 @@ public class MainViewModel : INotifyPropertyChanged
         Paths = new ObservableCollection<PathViewModel>();
         Cities = new List<City>();
         LoadCitiesCommand = new LoadFileCommand(this);
-        CanvasHeight = 660;
-        CanvasWidth = 720;
+        //CanvasHeight = 660;
+        //CanvasWidth = 720;
     }
 
     public void LoadCityList()
     {
         Cities.Clear();
         CitiesVM.Clear();
+        Paths.Clear();
         Cities = TspFileLoader.CreateCitiesListFromFile(_filePath);
 
         double scaleX = CalculateScaleX();
@@ -76,6 +100,30 @@ public class MainViewModel : INotifyPropertyChanged
         Paths.Add(new PathViewModel(CitiesVM[0], CitiesVM[CitiesVM.Count - 1]));
     }
 
+    private void RefreshCities()
+    {
+        CitiesVM.Clear();
+        Paths.Clear();
+        double scaleX = CalculateScaleX();
+        double scaleY = CalculateScaleY();
+        double offsetX = CalculateOffsetX();
+        double offsetY = CalculateOffsetY();
+
+        foreach (City city in Cities)
+        {
+            CitiesVM.Add(
+                new CityViewModel((city.X - offsetX) * scaleX + 5, (city.Y - offsetY) * scaleY + 5)
+            );
+        }
+
+        for (var i = 1; i < CitiesVM.Count; i++)
+        {
+            Paths.Add(new PathViewModel(CitiesVM[i - 1], CitiesVM[i]));
+        }
+
+        Paths.Add(new PathViewModel(CitiesVM[0], CitiesVM[CitiesVM.Count - 1]));
+    }
+    
     private double CalculateScaleX()
     {
         double min = CalculateOffsetX();

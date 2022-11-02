@@ -8,10 +8,10 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1080">
-    <Window.DataContext>
-        <viewModel:MainViewModel />
-    </Window.DataContext>
-    <Grid>
+    <Window.Resources>
+        <viewModel:MainViewModel x:Key="vm"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource vm}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -52,7 +52,10 @@
                                     Value="{Binding Phase2Seconds}" />
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1">
+        <Grid Grid.Column="1" 
+              viewModel:SizeObserver.Observe="True"
+              viewModel:SizeObserver.ObservedWidth="{Binding CanvasWidth, Mode=OneWayToSource}"
+              viewModel:SizeObserver.ObservedHeight="{Binding CanvasHeight, Mode=OneWayToSource}">
                 
             <ItemsControl ItemsSource="{Binding Paths}">
                 <ItemsControl.ItemsPanel>
@@ -70,7 +73,7 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
             
-            <ItemsControl ItemsSource="{Binding Paths}">
+            <ItemsControl ItemsSource="{Binding CitiesVM}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <Canvas />
@@ -87,8 +90,8 @@
                 </ItemsControl.ItemTemplate>
                 <ItemsControl.ItemContainerStyle>
                     <Style TargetType="ContentPresenter">
-                        <Setter Property="Canvas.Left" Value="{Binding XA}" />
-                        <Setter Property="Canvas.Top" Value="{Binding YA}" />
+                        <Setter Property="Canvas.Left" Value="{Binding X}" />
+                        <Setter Property="Canvas.Top" Value="{Binding Y}" />
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>

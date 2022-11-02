@@ -38,3 +38,43 @@ C:\Users\theKonfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\refint\
 C:\Users\theKonfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.pdb
 C:\Users\theKonfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.genruntimeconfig.cache
 C:\Users\theKonfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\ref\TSPWPF.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.exe
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.deps.json
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.runtimeconfig.json
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.pdb
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.csproj.AssemblyReference.cache
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF_MarkupCompile.cache
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF_MarkupCompile.lref
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.g.resources
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.AssemblyInfoInputs.cache
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.AssemblyInfo.cs
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.csproj.CoreCompileInputs.cache
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.csproj.CopyComplete
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\refint\TSPWPF.dll
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.pdb
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.genruntimeconfig.cache
+C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\ref\TSPWPF.dll
