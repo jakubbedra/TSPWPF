@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "V5YYvuV5o2iVc4vmjnw/iTZauuS98BOLNkqVLRhaLQ3oOqVAL3qXUWo37raY2i45VVAh2+EVQAJhBIjHdgK1jA==",
+  "dgSpecHash": "kI+UmJ3SrqSQfgYY6WipMk0P1lVpQbEF7tic+HcbWBwI3lHTj3cML64TcDH+cLglo3AveajeYZoBjG479esZQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
+  "projectFilePath": "C:\\Users\\The Konfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\theKonfyrm\\.nuget\\packages\\extended.wpf.toolkit\\4.4.0\\extended.wpf.toolkit.4.4.0.nupkg.sha512"
+    "C:\\Users\\The Konfyrm\\.nuget\\packages\\extended.wpf.toolkit\\4.4.0\\extended.wpf.toolkit.4.4.0.nupkg.sha512"
   ],
   "logs": []
 }

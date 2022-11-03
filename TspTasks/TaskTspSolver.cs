@@ -10,7 +10,7 @@ public class TaskTspSolver : ITspSolver
         for (int i = 0; i < citiesNo; i++)
             indices[i] = i;
         PmxSolver solver = new PmxSolver(
-            TspUtils.Randomize(indices), TspUtils.Randomize(indices),  citiesNo
+            TspUtils.Randomize(indices), TspUtils.Randomize(indices)
         );
                 
         return solver.Solve();

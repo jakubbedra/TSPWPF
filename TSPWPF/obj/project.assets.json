@@ -116,24 +116,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\theKonfyrm\\.nuget\\packages\\": {}
+    "C:\\Users\\The Konfyrm\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
+      "projectUniqueName": "C:\\Users\\The Konfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
       "projectName": "TSPWPF",
-      "projectPath": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
-      "packagesPath": "C:\\Users\\theKonfyrm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\theKonfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\obj\\",
+      "projectPath": "C:\\Users\\The Konfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\TSPWPF.csproj",
+      "packagesPath": "C:\\Users\\The Konfyrm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\The Konfyrm\\RiderProjects\\TSPWPF\\TSPWPF\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\theKonfyrm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\The Konfyrm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -176,7 +178,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
