@@ -15,38 +15,11 @@ public class ThreeOptSolver
 
     public int[] Solve()
     {
-        dupa();
-        return _currentBest;
-    }
-
-    private int dupa()
-    {
-        double delta = 0.0;
         for (int i = 0; i < _n; i++)
-        {
-            //int i1 = i;
-            int x1 = _currentBest[i];
-            int x2 = _currentBest[(i + 1) % _n];
-
-            for (int j = i + 2 /* +i? */; j < _n - 2; j++)
-            {
-                //int j1 = (i1 + j) % _n;
-                int y1 = _currentBest[j];
-                int y2 = _currentBest[(j + 1) % _n];
-
-                for (int k = j + 2; k < _n; k++)
-                {
-                    //int k1 = (i1 + k) % _n;
-                    int z1 = _currentBest[k];
-                    int z2 = _currentBest[(k + 1) % _n];
-
-                    delta += ReverseIfBetter(i, j, k);
-                    Console.WriteLine(delta);
-                }
-            }
-        }
-
-        return 0;
+        for (int j = i + 2 /* +i? */; j < _n - 2; j++)
+        for (int k = j + 2; k < _n; k++)
+            ReverseIfBetter(i, j, k);
+        return _currentBest;
     }
 
     private double ReverseIfBetter(int i, int j, int k)
