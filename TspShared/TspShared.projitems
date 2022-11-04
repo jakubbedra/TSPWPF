@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ITspSolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PmxSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Point.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ThreeOptSolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TspUtils.cs" />
   </ItemGroup>
