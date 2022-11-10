@@ -12,6 +12,12 @@ public abstract class CommandBase : ICommand
         _mainViewModel = mainViewModel;
     }
 
+    event EventHandler ICommand.CanExecuteChanged
+    {
+        add { CommandManager.RequerySuggested += value; }
+        remove { CommandManager.RequerySuggested -= value; }
+    }
+    
     public virtual bool CanExecute(object? parameter)
     {
         return true;

@@ -6,73 +6,159 @@
         xmlns:local="clr-namespace:TSPWPF"
         xmlns:viewModel="clr-namespace:TSPWPF.ViewModel"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:model="clr-namespace:TSPWPF.Model"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1080">
-    <Window.Resources>
-        <viewModel:MainViewModel x:Key="vm"/>
-    </Window.Resources>
-    <Grid DataContext="{StaticResource vm}">
+        Title="Wandering Trader Problem" Height="720" Width="1080">
+    <Grid Name="Grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" HorizontalAlignment="Left" Background="Gray">
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Row="0">
+            <StackPanel Grid.Row="0" Height="90">
                 <TextBlock Text="Tsp File" Height="20"></TextBlock>
                 <TextBox Text="{Binding FilePath, Mode=TwoWay}"></TextBox>
-                <Button Width="220" Height="40" Command="{Binding LoadCitiesCommand}">Select File</Button>
+                <Button Width="220" Height="30" Command="{Binding LoadCitiesCommand}">Select File</Button>
             </StackPanel>
-            <StackPanel Grid.Row="1">
+            <StackPanel Grid.Row="1" Height="60">
                 <TextBlock Text="Mechanism"></TextBlock>
-                <RadioButton>Tasks</RadioButton>
-                <RadioButton>Processes</RadioButton>
+                <RadioButton IsChecked="{Binding TasksChecked}">Tasks</RadioButton>
+                <RadioButton IsChecked="{Binding ThreadsChecked}">Threads</RadioButton>
             </StackPanel>
-            <StackPanel Grid.Row="2">
-                <TextBlock Text="HowMany"></TextBlock>
-                <xctk:IntegerUpDown HorizontalAlignment="Left" Width="100" Height="40" DefaultValue="2" Minimum="1"
-                                    Maximum="8"
-                                    Value="{Binding ProcessOrTaskCount}" />
+            <StackPanel Grid.Row="2" Height="60">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Parallel executions"></TextBlock>
+                    <xctk:IntegerUpDown Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Width="100" Height="30"
+                                        DefaultValue="2" Minimum="1"
+                                        Maximum="24"
+                                        Value="{Binding InputData.ParallelExecutionsCount}" />
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Epochs"></TextBlock>
+                    <xctk:IntegerUpDown Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Width="100" Height="30"
+                                        DefaultValue="2" Minimum="1"
+                                        Maximum="100"
+                                        Value="{Binding InputData.EpochsCount}" />
+                </Grid>
             </StackPanel>
-            <StackPanel Grid.Row="3">
-                <TextBlock Text="Phase 1 time [s]"></TextBlock>
-                <xctk:IntegerUpDown HorizontalAlignment="Left" Width="100" Height="40" DefaultValue="10" Minimum="1"
-                                    Maximum="80"
-                                    Value="{Binding Phase1Seconds}" />
-                <TextBlock Text="Phase 2 time [s]"></TextBlock>
-                <xctk:IntegerUpDown HorizontalAlignment="Left" Width="100" Height="40" DefaultValue="10" Minimum="1"
-                                    Maximum="80"
-                                    Value="{Binding Phase2Seconds}" />
+            <StackPanel Grid.Row="3" Height="80">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Phase 1 time [s]"></TextBlock>
+                    <xctk:IntegerUpDown Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Width="100" Height="30"
+                                        DefaultValue="10" Minimum="1"
+                                        Maximum="80"
+                                        Value="{Binding InputData.Phase1Seconds}" />
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Phase 2 time [s]"></TextBlock>
+                    <xctk:IntegerUpDown Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Width="100" Height="30"
+                                        DefaultValue="10" Minimum="1"
+                                        Maximum="80"
+                                        Value="{Binding InputData.Phase2Seconds}" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Height="90">
+                <Button Width="240" Height="30"
+                        Content="{Binding StartButtonLabel}"
+                        Command="{Binding StartOrPauseCalculationsCommand }" />
+                <Button Width="240" Height="30"
+                        Command="{Binding StopCalculationsCommand}">
+                    STOP
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="5" Height="60" VerticalAlignment="Top">
+                <TextBlock Text="{Binding ProgressLabel}" />
+                <ProgressBar Value="{Binding Progress}" Width="240" Height="30" />
+            </StackPanel>
+            <StackPanel Grid.Row="6" Height="190" VerticalAlignment="Top">
+                <TextBlock>Optimal Tour</TextBlock>
+                <ListView
+                    ItemsSource="{Binding OrderedCities}"
+                    Height="170"
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"
+                    ScrollViewer.CanContentScroll="True">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="VerticalAlignment" Value="Top"></Setter>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Width="40">
+                                <GridViewColumnHeader Content="ID"></GridViewColumnHeader>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate DataType="{x:Type model:City}">
+                                        <TextBlock Text="{Binding Id}"></TextBlock>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Width="90">
+                                <GridViewColumnHeader Content="X"></GridViewColumnHeader>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate DataType="{x:Type model:City}">
+                                        <TextBlock Text="{Binding X}"></TextBlock>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Width="90">
+                                <GridViewColumnHeader Content="Y"></GridViewColumnHeader>
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate DataType="{x:Type model:City}">
+                                        <TextBlock Text="{Binding Y}"></TextBlock>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+            <StackPanel Grid.Row="7">
+                <TextBlock Text="{Binding OptimalDistanceText}"></TextBlock>
             </StackPanel>
         </Grid>
-        <Grid Grid.Column="1" 
+        <Grid Grid.Column="1"
               viewModel:SizeObserver.Observe="True"
               viewModel:SizeObserver.ObservedWidth="{Binding CanvasWidth, Mode=OneWayToSource}"
               viewModel:SizeObserver.ObservedHeight="{Binding CanvasHeight, Mode=OneWayToSource}">
-                
+
             <ItemsControl ItemsSource="{Binding Paths}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <Canvas Background="Azure"/>
+                        <Canvas Background="Azure" />
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Line X1="{Binding XA}" Y1="{Binding YA}"
-                              X2="{Binding XB}" Y2="{Binding YB}" 
+                              X2="{Binding XB}" Y2="{Binding YB}"
                               Stroke="Black" StrokeThickness="1">
                         </Line>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-            
+
             <ItemsControl ItemsSource="{Binding CitiesVM}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -81,7 +167,8 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Ellipse Width="10" Height="10" Fill="Red" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Ellipse Width="10" Height="10" Fill="Red" VerticalAlignment="Center"
+                                 HorizontalAlignment="Center">
                             <Ellipse.RenderTransform>
                                 <TranslateTransform X="-5" Y="-5" />
                             </Ellipse.RenderTransform>
@@ -95,7 +182,7 @@
                     </Style>
                 </ItemsControl.ItemContainerStyle>
             </ItemsControl>
-            
+
         </Grid>
     </Grid>
 </Window>

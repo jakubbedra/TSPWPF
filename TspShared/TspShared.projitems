@@ -9,10 +9,16 @@
     <Import_RootNamespace>TspShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AbstractTspSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Algorithms\PmxSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Algorithms\ThreeOptSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Communication\SolverDataTransferer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Communication\UserInputConsumer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ITspSolver.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)PmxSolver.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Point.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ThreeOptSolver.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ListExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\ActionToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\InputData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TspResults.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TspUtils.cs" />
   </ItemGroup>
 </Project>

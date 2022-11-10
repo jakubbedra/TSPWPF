@@ -1,19 +1,23 @@
-﻿namespace TspShared;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace TspShared;
 
 public interface ITspSolver
 {
-    /**
-     * Calculates (sub) optimal TSP route with PmxSolver
+ /**
+     * Stops the calculations
      */
-    public Task<List<int[]>> Phase1(double[,] cities, int citiesNo, int threadsNo, long millis);
+    public TspResults Stop();
 
     /**
-     * Calculates (sub) optimal TSP route with ThreeOptSolver
+     * Pauses the calculations
      */
-    public Task<int[]>  Phase2(double[,] cities, int citiesNo, int threadsNo, long millis);
+    public TspResults Pause();
 
     /**
-     * Cancels the calculations
+     * Unpauses the calculations
      */
-    public int Cancel();
+    public void Unpause();
 }

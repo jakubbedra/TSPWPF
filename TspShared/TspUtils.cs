@@ -1,4 +1,7 @@
-﻿namespace TspShared;
+﻿using System;
+using System.Linq;
+
+namespace TspShared;
 
 public class TspUtils
 {

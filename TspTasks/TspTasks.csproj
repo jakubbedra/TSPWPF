@@ -7,6 +7,15 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\bin\Debug\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+      <PackageReference Include="RabbitMQ.Client" Version="6.4.0" />
+    </ItemGroup>
+
     <Import Project="..\TspShared\TspShared.projitems" Label="Shared" />
 
 </Project>

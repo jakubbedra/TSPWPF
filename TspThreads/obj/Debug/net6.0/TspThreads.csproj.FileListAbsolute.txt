@@ -1,0 +1,16 @@
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.csproj.AssemblyReference.cache
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.AssemblyInfoInputs.cache
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.AssemblyInfo.cs
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.csproj.CoreCompileInputs.cache
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0\TspThreads.exe
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0\TspThreads.deps.json
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0\TspThreads.runtimeconfig.json
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0\TspThreads.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0\TspThreads.pdb
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.csproj.CopyComplete
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\refint\TspThreads.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.pdb
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\TspThreads.genruntimeconfig.cache
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspThreads\obj\Debug\net6.0\ref\TspThreads.dll

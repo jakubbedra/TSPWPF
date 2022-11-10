@@ -78,3 +78,10 @@ C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\refint
 C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.pdb
 C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\TSPWPF.genruntimeconfig.cache
 C:\Users\The Konfyrm\RiderProjects\TSPWPF\TSPWPF\obj\Debug\net6.0-windows\ref\TSPWPF.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TSPWPF\bin\Debug\net6.0-windows\RabbitMQ.Client.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.exe
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.deps.json
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.runtimeconfig.json
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\bin\Debug\net6.0-windows\TSPWPF.pdb

@@ -196,3 +196,4 @@ C:\Users\The Konfyrm\RiderProjects\TSPWPF\TspSolversTest\bin\Debug\net6.0\zh-Han
 C:\Users\The Konfyrm\RiderProjects\TSPWPF\TspSolversTest\obj\Debug\net6.0\TspSolversTest.csproj.CopyComplete
 C:\Users\The Konfyrm\RiderProjects\TSPWPF\TspSolversTest\obj\Debug\net6.0\TspSolversTest.genruntimeconfig.cache
 C:\Users\The Konfyrm\RiderProjects\TSPWPF\TspSolversTest\obj\Debug\net6.0\ref\TspSolversTest.dll
+C:\Users\theKonfyrm\RiderProjects\TSPWPF\TspSolversTest\bin\Debug\net6.0\RabbitMQ.Client.dll
